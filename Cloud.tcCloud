@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="child list">
+			<Node name="amazonimage1">
+				<Node name="item data">
+					<Node name="settings"/>
+					<Prp name="access key" type="S" value="AKIAJTNV3PVZJYWVKB5A"/>
+					<Prp name="capasity" type="I" value="400"/>
+					<Prp name="caption" type="S" value="AmazonImage1"/>
+					<Prp name="instance type" type="S" value="4 vCPU, 16 GB RAM, EBS only, High (m4.xlarge)"/>
+					<Prp name="machine image" type="S" value="{SmartBear LoadComplete Remote Agent Image}"/>
+					<Prp name="network" type="S" value="172.31.0.0/16 (vpc-2a075d43)"/>
+					<Prp name="placement group" type="S" value="No placement group"/>
+					<Prp name="region" type="S" value="London (eu-west-2)"/>
+					<Prp name="secret access key" type="S" value="DDB939E5AFC043FCC7136670D18445E81C9456DAA1596F711D4C57D7655FD20FD4C094CA974A11F64074181C7B7AF22849924289486F91795591150E6ED89D7D240BD3AA9F429FF2337F76"/>
+					<Prp name="security group" type="S" value=""/>
+					<Prp name="signature" type="S" value="{29247FFF-A580-413C-BB2D-0C86F30ED6C0}"/>
+					<Prp name="subnet" type="S" value="172.31.16.0/20 (subnet-f57610b8)"/>
+					<Prp name="usepublicip" type="B" value="-1"/>
+					<Prp name="version" type="S" value="13.2"/>
+					<Prp name="zone" type="S" value="us-east-1a"/>
+				</Node>
+				<Prp name="key" type="S" value="{CF1D74D1-0924-4D34-BEE4-401ED20238B0}"/>
+				<Prp name="pluginname" type="S" value=""/>
+				<Prp name="type" type="S" value="{29247FFF-A580-413C-BB2D-0C86F30ED6C0}"/>
+				<Prp name="typename" type="S" value="AmazonImage"/>
+			</Node>
+		</Node>
+		<Node name="folders"/>
+		<Node name="settings"/>
+		<Prp name="signature" type="S" value="{82D531A6-6A19-483A-92A3-58AC89A2A786}"/>
+		<Prp name="version" type="S" value="13.2"/>
+	</Node>
+</Nodes>

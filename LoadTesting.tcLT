@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="{00000000-0000-0000-0000-000000000000}"/>
+		<Node name="child list">
+			<Node name="authentication">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="Authentication.tcLTAuth"/>
+				</Node>
+				<Prp name="key" type="S" value="{0F0B3865-0AFB-4F4B-BFC0-6A201EC759EA}"/>
+				<Prp name="pluginname" type="S" value="HTTP Load Testing"/>
+				<Prp name="type" type="S" value="{0BED0262-3394-4B57-88AB-B4C03B655C5A}"/>
+				<Prp name="typename" type="S" value="Authentication"/>
+			</Node>
+			<Node name="batchruns">
+				<Node name="item data">
+					<Node name="child list"/>
+					<Node name="folders"/>
+					<Node name="settings"/>
+					<Prp name="caption" type="S" value="BatchRuns"/>
+					<Prp name="signature" type="S" value="{B35351C2-C2BA-46F3-B34A-850C0C4EFFB1}"/>
+					<Prp name="version" type="S" value="13.2"/>
+				</Node>
+				<Prp name="key" type="S" value="{1A9A2AD6-1416-48C4-82AB-7D41E74E831D}"/>
+				<Prp name="pluginname" type="S" value="HTTP Load Testing"/>
+				<Prp name="type" type="S" value="{B35351C2-C2BA-46F3-B34A-850C0C4EFFB1}"/>
+				<Prp name="typename" type="S" value="BatchRuns"/>
+			</Node>
+			<Node name="cloud">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="Cloud.tcCloud"/>
+				</Node>
+				<Prp name="key" type="S" value="{9FA6D209-0BEF-4A6E-A57D-4C58C9EE36F2}"/>
+				<Prp name="pluginname" type="S" value=""/>
+				<Prp name="type" type="S" value="{82D531A6-6A19-483A-92A3-58AC89A2A786}"/>
+				<Prp name="typename" type="S" value="Cloud"/>
+			</Node>
+			<Node name="runtime">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="Runtime.tcLTRuntime"/>
+				</Node>
+				<Prp name="key" type="S" value="{0F49E225-017A-4F15-920E-704787B799DE}"/>
+				<Prp name="pluginname" type="S" value="HTTP Load Testing"/>
+				<Prp name="type" type="S" value="{18D48F39-D03B-449B-A321-7F87CBF412BA}"/>
+				<Prp name="typename" type="S" value="Runtime"/>
+			</Node>
+			<Node name="scenarios">
+				<Node name="item data">
+					<Node name="child list">
+						<Node name="add product code">
+							<Node name="item data">
+								<Prp name="relpath" type="S" value="Add Product Code.tcLTSCN"/>
+							</Node>
+							<Prp name="key" type="S" value="{576232F6-F09F-456F-AEF7-C0BF8442AD49}"/>
+							<Prp name="pluginname" type="S" value="HTTP Load Testing"/>
+							<Prp name="type" type="S" value="{76B68461-1CF0-4441-B9C9-CCEF65A7B9DE}"/>
+							<Prp name="typename" type="S" value="HTTP Scenario"/>
+						</Node>
+						<Node name="find supplier">
+							<Node name="item data">
+								<Prp name="relpath" type="S" value="Find Supplier.tcLTSCN"/>
+							</Node>
+							<Prp name="key" type="S" value="{202E78B5-6E85-403D-BCEF-4DF4F8CD449E}"/>
+							<Prp name="pluginname" type="S" value="HTTP Load Testing"/>
+							<Prp name="type" type="S" value="{76B68461-1CF0-4441-B9C9-CCEF65A7B9DE}"/>
+							<Prp name="typename" type="S" value="HTTP Scenario"/>
+						</Node>
+						<Node name="view all supply chains">
+							<Node name="item data">
+								<Prp name="relpath" type="S" value="View All Supply Chains.tcLTSCN"/>
+							</Node>
+							<Prp name="key" type="S" value="{91631F2D-8269-440A-BFBD-8DD39512D9D5}"/>
+							<Prp name="pluginname" type="S" value="HTTP Load Testing"/>
+							<Prp name="type" type="S" value="{76B68461-1CF0-4441-B9C9-CCEF65A7B9DE}"/>
+							<Prp name="typename" type="S" value="HTTP Scenario"/>
+						</Node>
+						<Node name="view supply chain">
+							<Node name="item data">
+								<Prp name="relpath" type="S" value="View Supply Chain.tcLTSCN"/>
+							</Node>
+							<Prp name="key" type="S" value="{562481B5-7B9B-4A02-AC70-C4B3A2DCA208}"/>
+							<Prp name="pluginname" type="S" value="HTTP Load Testing"/>
+							<Prp name="type" type="S" value="{76B68461-1CF0-4441-B9C9-CCEF65A7B9DE}"/>
+							<Prp name="typename" type="S" value="HTTP Scenario"/>
+						</Node>
+					</Node>
+					<Node name="folders"/>
+					<Node name="settings"/>
+					<Prp name="caption" type="S" value="Scenarios"/>
+					<Prp name="signature" type="S" value="{C07A1787-2A6A-4FB5-89BF-0EB8EF525E24}"/>
+					<Prp name="version" type="S" value="13.2"/>
+				</Node>
+				<Prp name="key" type="S" value="{31B882B6-88BE-4E49-9112-278242168F2E}"/>
+				<Prp name="pluginname" type="S" value="HTTP Load Testing"/>
+				<Prp name="type" type="S" value="{C07A1787-2A6A-4FB5-89BF-0EB8EF525E24}"/>
+				<Prp name="typename" type="S" value="HTTP Scenarios"/>
+			</Node>
+			<Node name="stations">
+				<Node name="item data">
+					<Node name="child list"/>
+					<Node name="settings"/>
+					<Node name="workstation (0)">
+						<Prp name="&amp;alias" type="S" value="Master"/>
+						<Prp name="h&amp;ost" type="S" value="localhost"/>
+					</Node>
+					<Prp name="caption" type="S" value="Stations"/>
+					<Prp name="count" type="I" value="1"/>
+					<Prp name="signature" type="S" value="{BCD4A4ED-E535-435E-BBAC-734172DD0700}"/>
+					<Prp name="version" type="S" value="13.2"/>
+				</Node>
+				<Prp name="key" type="S" value="{29D72C9C-C0B0-4F22-8F2A-CA4BA3809327}"/>
+				<Prp name="pluginname" type="S" value="HTTP Load Testing"/>
+				<Prp name="type" type="S" value="{BCD4A4ED-E535-435E-BBAC-734172DD0700}"/>
+				<Prp name="typename" type="S" value="HTTP Load Testing Stations"/>
+			</Node>
+			<Node name="tests">
+				<Node name="item data">
+					<Node name="child list">
+						<Node name="12 virtual users steady load">
+							<Node name="item data">
+								<Prp name="relpath" type="S" value="12 Virtual Users Steady Load.tcLTTst"/>
+							</Node>
+							<Prp name="key" type="S" value="{33AE6691-5190-4B24-9A70-4BC6753F0F2A}"/>
+							<Prp name="pluginname" type="S" value="HTTP Load Testing"/>
+							<Prp name="type" type="S" value="{15A41B5B-4167-46BD-9F43-686409BE762C}"/>
+							<Prp name="typename" type="S" value="LoadTestingTest"/>
+						</Node>
+						<Node name="12 virtual uses stepwise">
+							<Node name="item data">
+								<Prp name="relpath" type="S" value="12 Virtual Uses Stepwise.tcLTTst"/>
+							</Node>
+							<Prp name="key" type="S" value="{7A4F319C-8734-4CC8-98EF-2F9DC33D976D}"/>
+							<Prp name="pluginname" type="S" value="HTTP Load Testing"/>
+							<Prp name="type" type="S" value="{15A41B5B-4167-46BD-9F43-686409BE762C}"/>
+							<Prp name="typename" type="S" value="LoadTestingTest"/>
+						</Node>
+						<Node name="add product code">
+							<Node name="item data">
+								<Prp name="relpath" type="S" value="Add Product Code.tcLTTst"/>
+							</Node>
+							<Prp name="key" type="S" value="{4E7EBA8F-45B5-4632-8B0E-D86833D4CC8C}"/>
+							<Prp name="pluginname" type="S" value="HTTP Load Testing"/>
+							<Prp name="type" type="S" value="{15A41B5B-4167-46BD-9F43-686409BE762C}"/>
+							<Prp name="typename" type="S" value="LoadTestingTest"/>
+						</Node>
+						<Node name="find supplier">
+							<Node name="item data">
+								<Prp name="relpath" type="S" value="Find Supplier.tcLTTst"/>
+							</Node>
+							<Prp name="key" type="S" value="{1D1EA485-649D-4BB1-87D7-D8CC3532A196}"/>
+							<Prp name="pluginname" type="S" value="HTTP Load Testing"/>
+							<Prp name="type" type="S" value="{15A41B5B-4167-46BD-9F43-686409BE762C}"/>
+							<Prp name="typename" type="S" value="LoadTestingTest"/>
+						</Node>
+						<Node name="view all supply chains">
+							<Node name="item data">
+								<Prp name="relpath" type="S" value="View All Supply Chains.tcLTTst"/>
+							</Node>
+							<Prp name="key" type="S" value="{3508D6B0-494B-4506-86D6-C068CF45F3AF}"/>
+							<Prp name="pluginname" type="S" value="HTTP Load Testing"/>
+							<Prp name="type" type="S" value="{15A41B5B-4167-46BD-9F43-686409BE762C}"/>
+							<Prp name="typename" type="S" value="LoadTestingTest"/>
+						</Node>
+						<Node name="view supply chain">
+							<Node name="item data">
+								<Prp name="relpath" type="S" value="View Supply Chain.tcLTTst"/>
+							</Node>
+							<Prp name="key" type="S" value="{830305A6-22BD-4BE3-9EA0-ED8992D7253D}"/>
+							<Prp name="pluginname" type="S" value="HTTP Load Testing"/>
+							<Prp name="type" type="S" value="{15A41B5B-4167-46BD-9F43-686409BE762C}"/>
+							<Prp name="typename" type="S" value="LoadTestingTest"/>
+						</Node>
+					</Node>
+					<Node name="folders"/>
+					<Node name="settings"/>
+					<Prp name="caption" type="S" value="Tests"/>
+					<Prp name="signature" type="S" value="{74F238D9-08A0-4CE2-920A-BB64C5605E7E}"/>
+					<Prp name="version" type="S" value="13.2"/>
+				</Node>
+				<Prp name="key" type="S" value="{A1B422E1-663D-46A1-AAD9-C33971E950F1}"/>
+				<Prp name="pluginname" type="S" value="HTTP Load Testing"/>
+				<Prp name="type" type="S" value="{74F238D9-08A0-4CE2-920A-BB64C5605E7E}"/>
+				<Prp name="typename" type="S" value="Tests"/>
+			</Node>
+			<Node name="variables">
+				<Node name="item data">
+					<Prp name="relpath" type="S" value="Variables.tcLTVars"/>
+				</Node>
+				<Prp name="key" type="S" value="{0EBC3D69-B823-4E2F-A562-19B63D813548}"/>
+				<Prp name="pluginname" type="S" value="HTTP Load Testing"/>
+				<Prp name="type" type="S" value="{34C08C11-3BE1-41B1-946F-2AC0B57D8F83}"/>
+				<Prp name="typename" type="S" value="Variables"/>
+			</Node>
+		</Node>
+		<Node name="folders"/>
+		<Node name="settings"/>
+		<Prp name="pageqos" type="B" value="0"/>
+		<Prp name="pageqostime" type="I" value="5000"/>
+		<Prp name="requestqos" type="B" value="0"/>
+		<Prp name="responseqostime" type="I" value="2000"/>
+		<Prp name="signature" type="S" value="{E8C1C875-39EB-49BF-B198-621F4DCE9077}"/>
+		<Prp name="version" type="S" value="13.2"/>
+	</Node>
+</Nodes>

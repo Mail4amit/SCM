@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="settings"/>
+		<Prp name="custom view 1" type="S" value=""/>
+		<Prp name="custom view 2" type="S" value="$#$Virtual users$#$Warnings$#$"/>
+		<Prp name="custom view 3" type="S" value=""/>
+		<Prp name="custom view 4" type="S" value=""/>
+		<Prp name="legend 1 visible" type="B" value="0"/>
+		<Prp name="legend 2 visible" type="B" value="0"/>
+		<Prp name="legend 3 visible" type="B" value="0"/>
+		<Prp name="legend 4 visible" type="B" value="0"/>
+		<Prp name="panes count" type="I" value="2"/>
+		<Prp name="performance counters" type="H" value="00000000"/>
+		<Prp name="signature" type="S" value="{18D48F39-D03B-449B-A321-7F87CBF412BA}"/>
+		<Prp name="version" type="S" value="13.2"/>
+		<Prp name="view 1" type="I" value="0"/>
+		<Prp name="view 2" type="I" value="2"/>
+		<Prp name="view 3" type="I" value="2"/>
+		<Prp name="view 4" type="I" value="1"/>
+	</Node>
+</Nodes>
